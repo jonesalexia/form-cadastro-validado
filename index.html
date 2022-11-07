@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="container">
+        <h1 class="title">Formulário de Cadastro</h1>
+        <ul class="list"> 
+            <ul class="items">Nenhum campo de usuário pode estar vazio</ul>
+            <ul class="items">Usuário só poderá conter letras e/ou números</ul>
+            <ul class="items">Usuário deverá ter entre 3 e 12 caracteres</ul>
+            <ul class="items">Senha precisa ter entre 6 e 12 caracteres</ul>
+
+            <form action="/" method="post" class="form authenticate">
+                <label>Nome:</label>
+                <input type="text" class="name authenticate">
+
+                <label>Sobrenome:</label>
+                <input type="text" class="lastname authenticate">
+
+                <label>CPF:</label>
+                <input type="text" class="CPF authenticate">
+
+                <label>Usuário:</label>
+                <input type="text" class="user authenticate">
+
+                <label>Senha:</label>
+                <input type="password" class="password authenticate">
+
+                <label>Repetir senha:</label>
+                <input type="password" class="repeat-password authenticate">
+
+                <button type="submit">Enviar</button>
+            </form>
+        </ol>
+    </section>
+
+
+    <script src="./classValidaCPF.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
